@@ -318,39 +318,35 @@ section {
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
-.facts .count-box {
-  padding: 30px 30px 25px 30px;
-  margin-top: 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
+.count-box {
+  padding: 30px 30px 25px 0px;
+  
+  
+  
   background: #fff;
 }
 
-.facts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
+ .count-box i {
+  
+  font-size: 18px;
   background: #0563bb;
   color: #fff;
   border-radius: 50px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 38px;
+  height: 38px;
+  margin-right: 20px;
 }
 
-.facts .count-box span {
-  font-size: 36px;
-  display: block;
+ .count-box span {
+  font-size: 26px;
   font-weight: 600;
   color: #011426;
 }
 
-.facts .count-box p {
+ .count-box p {
   padding: 0;
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -497,21 +493,9 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
 }
 
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
+
 
 .portfolio .portfolio-wrap .portfolio-info {
   opacity: 0;
@@ -579,7 +563,6 @@ section {
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #45505b;
   margin: 0 2px;
-  font-size: 28px;
   display: inline-block;
   transition: 0.3s;
 }
@@ -1334,4 +1317,66 @@ body {
   background: #fff;
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+
+
+
+
+
+@media (max-width: 450px) {
+  
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .box {
+      text-align: center;
+      height: 180px;
+  }
+}
+
+.blue {
+  border-top: 3px solid var(--blue);
+}
+
+
+
+@media (min-width: 950px) {
+  box-down {
+      position: relative;
+  }
+  
+  
+  
+}
+
+.box {
+  border-radius: 1px;
+  box-shadow: 0px 15px 20px -10px var(--grayishBlue);
+  padding: 20px;
+}
+.box h3{
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #0563bb;
+    margin-bottom: 10px;
+}
+.portfolio-link-tab{
+  font-size: 16px !important;
+  display: flex !important;
+  justify-content: space-between;
 }
