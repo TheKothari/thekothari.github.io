@@ -1408,3 +1408,7 @@ body {
   height: auto;
   margin-right: 0px;
 }
+
+#hero .social-links i {
+  font-size: 36px;
+}
