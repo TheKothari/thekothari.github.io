@@ -1380,3 +1380,31 @@ body {
   display: flex !important;
   justify-content: space-between;
 }
+
+ .portfolio-link {
+  text-align: left;
+  z-index: 4;
+  margin-left: 5px;
+  
+}
+
+.portfolio-link {
+  color: #45505b;
+  margin: 0 2px;
+  transition: 0.3s;
+  font-weight: 400;
+}
+
+.portfolio-link:hover {
+  color: #148af9 ;
+}
+
+.portfolio-link i {
+  
+  font-size: 24px;
+  background: none !important;
+  color: #45505b !important;
+  width: auto;
+  height: auto;
+  margin-right: 0px;
+}
